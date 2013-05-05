@@ -1,3 +1,7 @@
+if process.env.NODETIME_ACCOUNT_KEY
+    require("nodetime").profile
+        accountKey: process.env.NODETIME_ACCOUNT_KEY
+
 User                                                    = require './src/user'
 Brain                                                   = require './src/brain'
 Robot                                                   = require './src/robot'
